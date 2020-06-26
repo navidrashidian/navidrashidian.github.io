@@ -2,21 +2,21 @@
    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
      <channel>
        <title>Posts on My Site</title>
-       <link>https://www.example.org/posts/</link>
+       <link>https://navidrashidian.github.io/posts/</link>
        <description>Recent content in Posts on My Site</description>
        <generator>Hugo -- gohugo.io</generator>
        <copyright>Copyright &amp;copy; 2019 - Author Name</copyright>
        <lastBuildDate>Tue, 14 Nov 2017 10:57:55 -0500</lastBuildDate>
        
-           <atom:link href="https://www.example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+           <atom:link href="https://navidrashidian.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
        
        
        <item>
          <title>Style Guide</title>
-         <link>https://www.example.org/posts/style-guide/</link>
+         <link>https://navidrashidian.github.io/posts/style-guide/</link>
          <pubDate>Tue, 14 Nov 2017 10:57:55 -0500</pubDate>
          
-         <guid>https://www.example.org/posts/style-guide/</guid>
+         <guid>https://navidrashidian.github.io/posts/style-guide/</guid>
          <description>&lt;h1 id=&#34;headings&#34;&gt;Headings&lt;/h1&gt;
 &lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
 &lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
@@ -175,10 +175,10 @@
        
        <item>
          <title>Image Style Guide</title>
-         <link>https://www.example.org/posts/image-content/</link>
+         <link>https://navidrashidian.github.io/posts/image-content/</link>
          <pubDate>Tue, 14 Nov 2017 08:08:17 -0500</pubDate>
          
-         <guid>https://www.example.org/posts/image-content/</guid>
+         <guid>https://navidrashidian.github.io/posts/image-content/</guid>
          <description>&lt;p&gt;Veniam est eu adipisicing reprehenderit do sit sint elit sint. Tempor laborum ut dolore aliqua. Commodo eu qui sint magna veniam laborum. Ad cupidatat do proident ex veniam amet Lorem. Officia laboris aute fugiat id consequat culpa ullamco labore ea amet ad. Occaecat quis dolor commodo pariatur cillum et id id cupidatat officia.&lt;/p&gt;
 &lt;p&gt;Magna incididunt proident cupidatat cupidatat enim consectetur sunt. Ipsum velit aliqua ex ipsum qui labore magna. Ea nisi anim ad culpa Lorem occaecat ex cupidatat duis labore officia dolor.&lt;/p&gt;
 &lt;figure class=&#34;full&#34;&gt;
@@ -230,10 +230,10 @@
        
        <item>
          <title>Creating a New Theme</title>
-         <link>https://www.example.org/posts/creating-a-new-theme/</link>
+         <link>https://navidrashidian.github.io/posts/creating-a-new-theme/</link>
          <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
          
-         <guid>https://www.example.org/posts/creating-a-new-theme/</guid>
+         <guid>https://navidrashidian.github.io/posts/creating-a-new-theme/</guid>
          <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll start with creating a new site with a very basic template. Then we&amp;rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.&lt;/p&gt;
@@ -1045,10 +1045,10 @@ $ vi themes/zafta/layouts/_default/single.html
        
        <item>
          <title>(Hu)go Template Primer</title>
-         <link>https://www.example.org/posts/goisforlovers/</link>
+         <link>https://navidrashidian.github.io/posts/goisforlovers/</link>
          <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
          
-         <guid>https://www.example.org/posts/goisforlovers/</guid>
+         <guid>https://navidrashidian.github.io/posts/goisforlovers/</guid>
          <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;http://golang.org/&#34;&gt;go&lt;/a&gt; &lt;a href=&#34;http://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
@@ -1086,7 +1086,7 @@ functions.&lt;/p&gt;
 &lt;p&gt;Each go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-&lt;a href=&#34;https://www.example.org/layout/variables&#34;&gt;variables&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;https://navidrashidian.github.io/layout/variables&#34;&gt;variables&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;A variable is accessed by referencing the variable name.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -1097,7 +1097,7 @@ page you are rendering. More details are available on the
 &lt;h2 id=&#34;functions&#34;&gt;Functions&lt;/h2&gt;
 &lt;p&gt;Go template ship with a few functions which provide basic functionality. The go
 template system also provides a mechanism for applications to extend the
-available functions with their own. &lt;a href=&#34;https://www.example.org/layout/functions&#34;&gt;Hugo template
+available functions with their own. &lt;a href=&#34;https://navidrashidian.github.io/layout/functions&#34;&gt;Hugo template
 functions&lt;/a&gt; provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -1228,7 +1228,7 @@ type (supported by your front matter/config format) and use them however
 you want to inside of your templates.&lt;/p&gt;
 &lt;h2 id=&#34;using-content-page-parameters&#34;&gt;Using Content (page) Parameters&lt;/h2&gt;
 &lt;p&gt;In each piece of content you can provide variables to be used by the
-templates. This happens in the &lt;a href=&#34;https://www.example.org/content/front-matter&#34;&gt;front matter&lt;/a&gt;.&lt;/p&gt;
+templates. This happens in the &lt;a href=&#34;https://navidrashidian.github.io/content/front-matter&#34;&gt;front matter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn&amp;rsquo;t make a lot of sense. We&amp;rsquo;ve defined a variable in our front matter
@@ -1287,15 +1287,15 @@ so, such as in this example:&lt;/p&gt;
        
        <item>
          <title>Getting Started with Hugo</title>
-         <link>https://www.example.org/posts/hugoisforlovers/</link>
+         <link>https://navidrashidian.github.io/posts/hugoisforlovers/</link>
          <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
          
-         <guid>https://www.example.org/posts/hugoisforlovers/</guid>
+         <guid>https://navidrashidian.github.io/posts/hugoisforlovers/</guid>
          <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
 &lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
 appropriate version for your os and architecture.&lt;/p&gt;
 &lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
-&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://www.example.org/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://navidrashidian.github.io/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
 &lt;p&gt;Hugo has its own example site which happens to also be the documentation site
 you are reading right now.&lt;/p&gt;
@@ -1350,10 +1350,10 @@ Having nearly instant feedback enables you to have your creativity flow without 
        
        <item>
          <title>Migrate to Hugo from Jekyll</title>
-         <link>https://www.example.org/posts/migrate-from-jekyll/</link>
+         <link>https://navidrashidian.github.io/posts/migrate-from-jekyll/</link>
          <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
          
-         <guid>https://www.example.org/posts/migrate-from-jekyll/</guid>
+         <guid>https://navidrashidian.github.io/posts/migrate-from-jekyll/</guid>
          <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.
 With Jekyll, something that looked like&lt;/p&gt;
@@ -1369,7 +1369,7 @@ With Jekyll, something that looked like&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;create-your-hugo-configuration-file&#34;&gt;Create your Hugo configuration file&lt;/h2&gt;
-&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;https://www.example.org/overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;https://navidrashidian.github.io/overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
 &lt;h2 id=&#34;set-your-configuration-publish-folder-to-_site&#34;&gt;Set your configuration publish folder to &lt;code&gt;_site&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;The default is for Jekyll to publish to &lt;code&gt;_site&lt;/code&gt; and for Hugo to publish to &lt;code&gt;public&lt;/code&gt;. If, like me, you have &lt;a href=&#34;http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html&#34;&gt;&lt;code&gt;_site&lt;/code&gt; mapped to a git submodule on the &lt;code&gt;gh-pages&lt;/code&gt; branch&lt;/a&gt;, you&amp;rsquo;ll want to do one of two alternatives:&lt;/p&gt;
 &lt;ol&gt;
@@ -1391,10 +1391,10 @@ With Jekyll, something that looked like&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;convert-jekyll-templates-to-hugo-templates&#34;&gt;Convert Jekyll templates to Hugo templates&lt;/h2&gt;
-&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;https://www.example.org/layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;https://navidrashidian.github.io/layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
 &lt;p&gt;As a single reference data point, converting my templates for &lt;a href=&#34;http://heyitsalex.net/&#34;&gt;heyitsalex.net&lt;/a&gt; took me no more than a few hours.&lt;/p&gt;
 &lt;h2 id=&#34;convert-jekyll-plugins-to-hugo-shortcodes&#34;&gt;Convert Jekyll plugins to Hugo shortcodes&lt;/h2&gt;
-&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;https://www.example.org/doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
+&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;https://navidrashidian.github.io/doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
 &lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
 &lt;p&gt;As an example, I was using a custom &lt;a href=&#34;https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb&#34;&gt;&lt;code&gt;image_tag&lt;/code&gt;&lt;/a&gt; plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.&lt;/p&gt;
 &lt;p&gt;Jekyll&amp;rsquo;s plugin:&lt;/p&gt;
