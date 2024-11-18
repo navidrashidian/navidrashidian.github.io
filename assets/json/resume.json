@@ -150,14 +150,16 @@
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "Persian",
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
+    },
+    {
+      "language": "German",
+      "fluency": "Basic Reading"
     }
   ],
   "interests": [
