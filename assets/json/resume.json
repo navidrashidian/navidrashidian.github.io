@@ -46,15 +46,13 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
+      "institution": "University of Tehran",
+      "location": "Tehran, Iran",
+      "area": "Philosophy",
+      "studyType": "BA",
       "startDate": "1905-01-01",
       "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "score": "18.62"
     }
   ],
   "awards": [
@@ -158,21 +156,22 @@
       "fluency": "Fluent"
     },
     {
+      "language": "Classical Arabic",
+      "fluency": "Reading Knowledge"
+    },
+    {
       "language": "German",
       "fluency": "Basic Reading"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Mathematics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Number Theory",
+        "Model Theory",
+        "Algebraic Geometry"
       ]
     }
   ],
