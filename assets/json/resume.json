@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Navid Rashidian",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
+    "email": "navidrashidian@gmail.com",
     "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "https://navidrashidian.github.io",
+    "summary": "Computer Science student",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
