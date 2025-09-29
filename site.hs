@@ -19,6 +19,12 @@ main = hakyllWith config $ do
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
+    
+    match (fromList ["presentations.rst"]) $ do
+        route   $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
 
     {- match (fromList ["about.rst", "contact.markdown"]) $ do
         route   $ setExtension "html"
@@ -64,6 +70,11 @@ main = hakyllWith config $ do
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
+
+    match "pdfs/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
 
 
 --------------------------------------------------------------------------------
