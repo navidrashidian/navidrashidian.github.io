@@ -4,7 +4,7 @@ title: Miscellaneous
 
 Proof: a thematic history
 ===========================
-In Spring semester 2024 I gave a series of four mini-lectures on the history of logic in Majid Alizadeh's Introduction to Logic course at the University of Tehran. You can find my slides below.
+In Spring semester 2024 I was invited to give a series of four mini-lectures on the history of logic in Majid Alizadeh's Introduction to Logic course at the University of Tehran. You can find my slides below.
 
 1. `The Emergence of Proof in Ancient Greece </pdfs/S1.pdf>`_
 2. `The Algebra of Logic Tradition </pdfs/S2.pdf>`_
