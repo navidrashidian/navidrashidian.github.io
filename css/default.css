@@ -1,56 +1,82 @@
 body {
     color: black;
     font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
-}
-
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
-}
-
-div#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-div#header #navigation {
-    text-align: right;
-}
-
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
     font-size: 24px;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 20px;
+    margin-top: 0;
 }
 
 div.info {
     color: #555;
     font-size: 14px;
     font-style: italic;
+}
+
+div#header {
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;       /* allow wrapping on small screens */
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#logo a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div#header #navigation {
+    display: flex;
+    flex-wrap: wrap;       /* wrap links to new line if needed */
+    gap: 10px;             /* space between links */
+}
+
+div#header #navigation a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* div#footer {
+    border-top: solid 2px black;
+    color: #555;
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 12px 0;
+    text-align: center;
+} */
+
+
+@media (max-width: 600px) {
+    div#header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#header #navigation {
+        justify-content: center;
+    }
+
+    div#header #navigation a {
+        font-size: 16px; /* smaller font for small screens */
+        margin: 5px;
+    }
 }
