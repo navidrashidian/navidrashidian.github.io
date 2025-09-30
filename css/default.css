@@ -18,6 +18,29 @@ h2 {
     margin-top: 0;
 }
 
+#profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    max-width: 190px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bio {
+    flex: 1;
+    min-width: 250px;
+}
+
+.bio p:first-child {
+    margin-top: 0;
+}
+
 div.info {
     color: #555;
     font-size: 14px;
@@ -29,7 +52,7 @@ div#header {
     margin-bottom: 30px;
     padding: 12px 0;
     display: flex;
-    flex-wrap: wrap;       /* allow wrapping on small screens */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -43,8 +66,8 @@ div#logo a {
 
 div#header #navigation {
     display: flex;
-    flex-wrap: wrap;       /* wrap links to new line if needed */
-    gap: 10px;             /* space between links */
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 div#header #navigation a {
@@ -76,7 +99,16 @@ div#header #navigation a {
     }
 
     div#header #navigation a {
-        font-size: 16px; /* smaller font for small screens */
+        font-size: 16px;
         margin: 5px;
+    }
+
+    #profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio {
+        min-width: 100%;
     }
 }
