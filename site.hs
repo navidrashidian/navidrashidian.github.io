@@ -66,7 +66,7 @@ main = hakyllWith config $ do
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/home.html" indexCtx
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
