@@ -29,6 +29,7 @@ h2 {
 .profile {
     max-width: 190px;
     width: 100%;
+    margin-left: 6px;
     height: auto;
     display: block;
 }
@@ -125,22 +126,34 @@ h1.page-title {
 
 @media (max-width: 950px) {
     div#header {
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px;
-        padding-bottom: 2px;
+        padding: 12px 0 0;
     }
 
-    div#logo a {
-        font-size: 26px;
+    div#logo {
+        width: 100%;
+        text-align: center;
     }
 
-    div#header #navigation {
-        justify-content: center;
+    div#navigation {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        padding-right: 12px;
+    }
+
+    #navigation a {
+        display: inline-block;
+        text-decoration: none;
+        line-height: 1.6;
     }
 
     div#header #navigation a {
-        font-size: 16px;
+        font-size: 18px;
         margin: 5px;
     }
 
