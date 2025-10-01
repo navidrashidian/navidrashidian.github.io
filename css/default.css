@@ -1,11 +1,11 @@
 body {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 auto;
     width: 90%;
     max-width: 600px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 h1 {
@@ -19,6 +19,7 @@ h2 {
 }
 
 #profile-section {
+    margin-top: 24px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -49,12 +50,24 @@ div.info {
 
 div#header {
     border-bottom: 2px solid black;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     padding: 12px 0 6px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #222;
+    text-decoration: none;
 }
 
 div#logo a {
@@ -79,18 +92,25 @@ div#header #navigation a {
 }
 
 h1.page-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+    margin-top: 10px;
     text-align: left;
+    font-family: Arial, sans-serif;
 }
 
 .page-body h1 {
-    font-size: 22px;
+    color: #111;
+    font-size: 24px;
     margin-top: 30px;
-    margin-bottom: 10px;
-    padding-bottom: 2px;
+    margin-bottom: 0px;
     border-bottom: 1px solid #ccc;
+}
+
+.page-body h1:first-child {
+    margin-top: 10px;
 }
 
 /* div#footer {
@@ -107,12 +127,12 @@ h1.page-title {
     div#header {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-bottom: 2px;
     }
 
     div#logo a {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     div#header #navigation {
@@ -127,6 +147,7 @@ h1.page-title {
     #profile-section {
         flex-direction: column;
         gap: 14px;
+        margin-top: 16pt;
         /* align-items: center; */
     }
 
@@ -139,15 +160,11 @@ h1.page-title {
         margin-top: 100;
     }
 
-    .bio p:first-child {
-        margin-top: 100 !important;
-    }
-
     h1.page-title {
         font-size: 26px;
     }
 
     .page-body h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
