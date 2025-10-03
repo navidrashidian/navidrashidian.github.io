@@ -57,7 +57,7 @@ div#header {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -99,7 +99,7 @@ h1.page-title {
     margin-bottom: 16px;
     margin-top: 10px;
     text-align: left;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .page-body h1 {
