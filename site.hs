@@ -10,6 +10,9 @@ config = defaultConfiguration
   { destinationDirectory = "docs"
   }
 
+root :: String
+root = "navidrashidian.github.io"
+
 main :: IO ()
 main = hakyllWith config $ do
     match "images/*" $ do
@@ -79,10 +82,24 @@ main = hakyllWith config $ do
         route   idRoute
         compile copyFileCompiler
 
+    create ["sitemap.xml"] $ do
+        route idRoute
+        compile $ do
+            posts <- recentFirst =<< loadAll "posts/*"
+
+            singlePages <- loadAll (fromList ["misc.rst"])
+
+            let pages = posts <> singlePages
+                sitemapCtx =
+                    constField "root" root     <>
+                    listField "pages" postCtx (return pages)
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
+    constField "root" root       `mappend`
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
