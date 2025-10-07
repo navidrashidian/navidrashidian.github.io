@@ -5,25 +5,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="google-site-verification" content="rAc7qMRwAt8JxtCAiwLYh4u1b77W9izWsmI318iS0u0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Navid Rashidian - $title$</title>
         <link rel="stylesheet" type="text/css" href="/css/default.css" />
     </head>
     <body>
-        <div id="header">
-            <div id="logo">
-                <a href="/">Navid Rashidian</a>
-            </div>
-            <div id="navigation">
-                <a href="/">Home</a>
-                <a href="/pdfs/CV.pdf">CV</a>
-                <a href="/misc.html">Misc.</a>
-            </div>
-        </div>
+        $partial("templates/header.html")$
 
         <div id="content">
-            <h1>$title$</h1>
+            <h1 class="page-title">$title$</h1>
 
-            $body$
+            <div class="page-body">
+                $body$
+            </div>
         </div>
+
     </body>
 </html>
