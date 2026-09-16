@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
+import           Data.List (stripPrefix)
 import           Hakyll
 
 
@@ -26,6 +27,7 @@ main = hakyllWith config $ do
     match (fromList ["misc.rst"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
+            >>= withItemBody (return . demoteTopLevelHeadings)
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
@@ -103,3 +105,15 @@ postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
+demoteTopLevelHeadings :: String -> String
+demoteTopLevelHeadings =
+    replace "</h1>" "</h2>" . replace "<h1" "<h2"
+
+replace :: String -> String -> String -> String
+replace old new = go
+  where
+    go [] = []
+    go input@(character : rest) =
+        case stripPrefix old input of
+            Just remaining -> new ++ go remaining
+            Nothing        -> character : go rest
