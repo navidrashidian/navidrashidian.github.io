@@ -24,7 +24,7 @@ main = hakyllWith config $ do
         route   idRoute
         compile compressCssCompiler
     
-    match (fromList ["misc.rst"]) $ do
+    match (fromList ["misc.rst", "research.rst"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= withItemBody (return . demoteTopLevelHeadings)
@@ -89,7 +89,7 @@ main = hakyllWith config $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
 
-            singlePages <- loadAll (fromList ["misc.rst"])
+            singlePages <- loadAll (fromList ["misc.rst", "research.rst"])
 
             let pages = posts <> singlePages
                 sitemapCtx =
