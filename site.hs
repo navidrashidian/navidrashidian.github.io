@@ -12,7 +12,7 @@ config = defaultConfiguration
   }
 
 root :: String
-root = "navidrashidian.github.io"
+root = "https://navidrashidian.com"
 
 main :: IO ()
 main = hakyllWith config $ do
